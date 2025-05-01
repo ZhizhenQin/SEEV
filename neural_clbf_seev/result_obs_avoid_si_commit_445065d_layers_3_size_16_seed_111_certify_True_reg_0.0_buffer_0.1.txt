@@ -1,0 +1,1 @@
+{"veri_flag": true, "early_stop_epoch": 6, "CEs": [], "seg_search_time": 0.33623814582824707, "num_boundary_seg": 48, "num_prob_S_checklist": 0}

@@ -1,0 +1,1 @@
+{"veri_flag": false, "early_stop_epoch": -1, "CEs": [], "seg_search_time": 0.0073702335357666016, "num_boundary_seg": 1}

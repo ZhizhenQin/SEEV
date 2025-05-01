@@ -18,6 +18,7 @@ from .autorally import AutoRally
 from .darboux import Darboux
 from .obs_avoid import ObsAvoid
 from .high_o import HighO
+from .obs_avoid_SI import ObsAvoidSI
 
 __all__ = [
     "ControlAffineSystem",
@@ -38,6 +39,7 @@ __all__ = [
     "Darboux",
     "ObsAvoid",
     "HighO",
+    "ObsAvoidSI",
 ]
 
 try:
