@@ -567,6 +567,7 @@ class NeuralCBFController(pl.LightningModule, CBFController):
             from EEV.Cases import ObsAvoid as ObsAvoid_EEV
             from EEV.Cases import HighO as HighO_EEV
             from EEV.Cases import ObsAvoid_SI as ObsAvoid_SI_EEV
+            from EEV.Cases import ObsAvoid_DI as ObsAvoid_DI_EEV
 
             if self.dynamics_model.__class__.__name__ == "Darboux":
                 case = Darboux_EEV()
@@ -578,6 +579,8 @@ class NeuralCBFController(pl.LightningModule, CBFController):
                 case = HighO_EEV()
             elif self.dynamics_model.__class__.__name__ == "ObsAvoidSI":
                 case = ObsAvoid_SI_EEV()
+            elif self.dynamics_model.__class__.__name__ == "ObsAvoidDI":
+                case = ObsAvoid_DI_EEV()
 
             hdlayers = []
             for layer in range(self.cbf_hidden_layers):
